@@ -1,0 +1,13 @@
+{
+    "name": "currys/2021_advent-of-code_php",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Currys\\2021AdventOfCodePhp\\": "src/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9"
+    }
+}
