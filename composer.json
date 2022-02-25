@@ -4,10 +4,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Currys\\2021AdventOfCodePhp\\": "src/"
+            "AdventOfCode\\": "src/"
         }
     },
     "require": {
         "phpunit/phpunit": "^9"
+    },
+    "scripts": {
+        "test": "phpunit"
     }
 }
