@@ -16,6 +16,5 @@ jobs:
         with:
           configuration: phpunit.xml
           bootstrap: vendor/autoload.php
-          args: --coverage-text
           version: 9.5
           php_version: 8.1

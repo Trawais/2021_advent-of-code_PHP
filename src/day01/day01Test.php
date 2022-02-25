@@ -7,8 +7,8 @@ final class day01Test extends TestCase
 {
     public function testGivenExamplePasses(): void
     {
-        $c = new DepthMeasurement;
+        $measurement = new DepthMeasurement();
         $input = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
-        $this->assertEquals(7, $c->depthMeasurementIncreases($input));
+        $this->assertEquals(7, $measurement->depthMeasurementIncreases($input));
     }
 }
