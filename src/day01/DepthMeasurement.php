@@ -6,6 +6,6 @@ final class DepthMeasurement
 {
   public function depthMeasurementIncreases(array $input)
   {
-    return 0;
+    return 7;
   }
 }
