@@ -20,6 +20,10 @@ Run the container
 
 `docker run -ti --rm -v $(PWD):/app advent-of-code`
 
+Build the project in the container
+
+`composer install`
+
 And run the tests in the container
 
 `composer test`
