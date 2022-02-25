@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
-use Currys\AdventOfCode\DepthMeasurement;
+use AdventOfCode\Day01\DepthMeasurement;
 
 final class day01Test extends TestCase
 {
