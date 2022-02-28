@@ -1,5 +1,6 @@
 {
     "name": "currys/2021_advent-of-code_php",
+    "description": "The repository for the educatinal purposes where we learn the new language: PHP and solving the tasks from Advent of Code 2021.",
     "type": "project",
     "license": "MIT",
     "autoload": {
