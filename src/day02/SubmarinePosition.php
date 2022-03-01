@@ -21,6 +21,9 @@ final class SubmarinePosition
               $position += $split[1];
               if ($aim != 0) {
                   $depth += $split[1] * $aim;
+                  if($depth < 0) {
+                      $depth = 0;
+                  }
               }
           } else {
               echo "Wrong input";
