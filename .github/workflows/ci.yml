@@ -32,4 +32,4 @@ jobs:
     - name: composer install missing files
       run: composer install
     - name: run tests
-      run: /usr/bin/php -f bin/phpunit
+      run: /usr/bin/php -f ./vendor/bin/phpunit
