@@ -13,7 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: php-actions/composer@v6
     - name: Setup PHP version
       uses: shivammathur/setup-php@v2
       with:
@@ -21,4 +20,4 @@ jobs:
     - name: Check files
       run: ls -la vendor
     - name: Run all tests
-      run: ./vendor/bin/phpunit
+      run: composer install && ./vendor/bin/phpunit
