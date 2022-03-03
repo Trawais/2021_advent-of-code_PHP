@@ -20,6 +20,5 @@ jobs:
 
     - uses: php-actions/composer@v6
 
-    - name: Check files 
-      uses: ./
+    - name: Check files
       run: ls -la vendor
