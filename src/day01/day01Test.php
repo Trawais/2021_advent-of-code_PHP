@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace AdventOfCode\Day01;
+namespace AdventOfCode\day01;
 
 use PHPUnit\Framework\TestCase;
 use AdventOfCode\Day01\DepthMeasurement;
