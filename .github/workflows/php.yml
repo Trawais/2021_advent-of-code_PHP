@@ -16,8 +16,8 @@ jobs:
     - name: Setup PHP version
       uses: shivammathur/setup-php@v2
       with:
-        php-verson: 8.1
-    - name: Check files
-      run: ls -la vendor
+        php-version: 8.1
     - name: Run all tests
       run: composer install && ./vendor/bin/phpunit
+    - name: Check files
+      run: ls -la vendor
