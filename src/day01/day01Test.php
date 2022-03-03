@@ -3,7 +3,7 @@
 namespace AdventOfCode\day01;
 
 use PHPUnit\Framework\TestCase;
-use AdventOfCode\Day01\DepthMeasurement;
+use AdventOfCode\day01\DepthMeasurement;
 
 final class day01Test extends TestCase
 {
