@@ -2,8 +2,6 @@
 
 namespace AdventOfCode\Day01;
 
-require '../../vendor/autoload.php';
-
 use PHPUnit\Framework\TestCase;
 use AdventOfCode\Day01\DepthMeasurement;
 
