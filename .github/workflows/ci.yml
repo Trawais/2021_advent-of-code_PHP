@@ -2,22 +2,34 @@ name: CI
 
 on: [push]
 
+#jobs:
+#  Run-All-Tests:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - uses: actions/checkout@v2
+#
+#      - uses: php-actions/composer@v6
+#        with:
+#          version: 2
+#          php_version: 8.1
+#
+#      - name: PHPUnit Tests
+#        uses: php-actions/phpunit@v3
+#        with:
+#          configuration: phpunit.xml
+#          bootstrap: vendor/autoload.php
+#          version: 9.5
+#          php_version: 8.1
+
 jobs:
-  Run-All-Tests:
+  test:
+    name: checkout and test
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-
-      - uses: php-actions/composer@v6
-        with:
-          version: 2
-          php_version: 8.1
-
-      - name: PHPUnit Tests
-        uses: php-actions/phpunit@v3
-        with:
-          configuration: phpunit.xml
-          bootstrap: vendor/autoload.php
-          version: 9.5
-          php_version: 8.1
+    - name: checkout project
+      uses: actions/checkout@v1
+    - name: composer install missing files
+      run: composer install
+    - name: run tests
+      run: /usr/bin/php -f bin/phpunit
