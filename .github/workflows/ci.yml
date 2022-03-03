@@ -13,6 +13,7 @@ jobs:
         with:
           version: 2
           php_version: 8.1
+          args: --ignore-platform-reqs --optimize-autoloader --classmap-authoritative
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3
