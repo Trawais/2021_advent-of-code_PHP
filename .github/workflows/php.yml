@@ -13,12 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      name: Checkout repository
-
-    - name: Validate composer.json and composer.lock
-      run: composer validate --strict
-
     - uses: php-actions/composer@v6
-
+    - name: Setup PHP version
+      uses: shivammathur/setup-php@v2
+      with:
+        php-verson: 8.1
     - name: Check files
       run: ls -la vendor
+    - name: Run all tests
+      run: ./vendor/bin/phpunit
