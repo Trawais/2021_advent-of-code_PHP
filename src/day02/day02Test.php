@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace AdventOfCode\Day02;
+namespace AdventOfCode\day02;
 
 use PHPUnit\Framework\TestCase;
 
