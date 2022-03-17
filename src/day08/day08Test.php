@@ -21,6 +21,6 @@ final class day08Test extends TestCase
             "egadfb cdbfeg cegd fecab cgb gbdefca cg fgcdab egfdb bfceg | gbdfcae bgc cg cgb",
             "gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce"
         ];
-        $this->assertEquals(26, $measurement->getNumberOfUniqueNumbers($input));
+        $this->assertEquals(61229, $measurement->getNumberOfUniqueNumbers($input));
     }
 }
