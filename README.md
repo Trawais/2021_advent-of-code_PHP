@@ -27,3 +27,12 @@ Build the project in the container
 And run the tests in the container
 
 `composer test`
+
+## Alternative build and run
+```shell
+# Install composer
+docker-compose run --rm php-cli composer install
+
+# Run the tests
+docker-compose run --rm php-cli composer test
+```
