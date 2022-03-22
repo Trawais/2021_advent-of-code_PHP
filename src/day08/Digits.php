@@ -11,7 +11,7 @@ final class Digits
         $six = [];
         $result = "";
         $output = 0;
-        
+
         for ($a = 0; $a < count($input); $a++) {
             $exploded = explode("|", $input[$a]);
             $firstPart = explode(" " , $exploded[0]);
@@ -74,7 +74,7 @@ final class Digits
                     $numbers[6] = $value;
                 }
             }
-            
+
             foreach ($secondPart as $value) {
                 $splited = str_split($value);
                 sort($splited);
@@ -82,7 +82,7 @@ final class Digits
                 $result .= array_search($value, $numbers);
             }
             $output += intval($result);
-            
+
             $result = "";
             $five = [];
             $six = [];
