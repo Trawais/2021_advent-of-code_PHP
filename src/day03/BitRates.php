@@ -6,7 +6,7 @@ final class BitRates
 {
     public function returnRightValues($one, $zero, $oneArray, $zeroArray, $zeroOrONe)
     {
-        if ($zeroOrONe==1) {
+        if ($zeroOrONe == 1) {
             if ($one >= $zero) {
                 return $oneArray;
             } else {
@@ -24,7 +24,7 @@ final class BitRates
     public function getOxygenGeneratorOrCo2Rating(array $value, $zeroOrOne): int
     {
         $numberOfCharInString = 0;
-        
+
         while (count($value) > 1) {
             $zero = 0;
             $one = 0;
@@ -48,6 +48,6 @@ final class BitRates
 
     public function getBitRate(array $input): int
     {
-        return $this->getOxygenGeneratorOrCo2Rating($input ,1) * $this->getOxygenGeneratorOrCo2Rating($input, 0);
+        return $this->getOxygenGeneratorOrCo2Rating($input, 1) * $this->getOxygenGeneratorOrCo2Rating($input, 0);
     }
 }
